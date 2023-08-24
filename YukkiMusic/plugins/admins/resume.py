@@ -42,11 +42,11 @@ async def resume_com(cli, message: Message, _, chat_id):
         photo=RESUME_IMG_URL,
         caption=_["admin_4"].format(message.from_user.mention)
     )
-    #await asyncio.sleep(1)
-    #await message.reply_sticker("CAACAgQAAxkBAAEJ6olkzG_ZZe1h-5HZZBrJqU_ZFunZpQACvxEAAqbxcR6tsYeSUVSTay8E") #rose kudukkurathu
-    for num in assistants:
-            client = await get_client(num)
-            await client.send_sticker(
-                        message.chat.id,
-                        sticker="CAACAgQAAxkBAAEJ6olkzG_ZZe1h-5HZZBrJqU_ZFunZpQACvxEAAqbxcR6tsYeSUVSTay8E"
-            )
+    await asyncio.sleep(1)
+    await message.reply_sticker("CAACAgQAAxkBAAEJ6olkzG_ZZe1h-5HZZBrJqU_ZFunZpQACvxEAAqbxcR6tsYeSUVSTay8E") #rose kudukkurathu
+    #for num in assistants:
+            #client = await get_client(num)
+            #await client.send_sticker(
+                        #message.chat.id,
+                        #sticker="CAACAgQAAxkBAAEJ6olkzG_ZZe1h-5HZZBrJqU_ZFunZpQACvxEAAqbxcR6tsYeSUVSTay8E"
+            #)
