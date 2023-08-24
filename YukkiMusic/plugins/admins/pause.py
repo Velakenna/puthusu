@@ -43,10 +43,10 @@ async def pause_admin(cli, message: Message, _, chat_id):
         caption=_["admin_2"].format(message.from_user.mention)
     )
     await asyncio.sleep(1)
-    #await message.reply_sticker("CAACAgEAAxkBAAEJ6nxkzFywBJ_zMhOj0wc7AQgV9cLNXwAC3QQAAlEpDTmUHImRSVIUeS8E")
-    for num in assistants:
-            client = await get_client(num)
-            await client.send_sticker(
-                        message.chat.id,
-                        sticker="CAACAgEAAxkBAAEJ6nxkzFywBJ_zMhOj0wc7AQgV9cLNXwAC3QQAAlEpDTmUHImRSVIUeS8E"
-            )
+    await message.reply_sticker("CAACAgEAAxkBAAEJ6nxkzFywBJ_zMhOj0wc7AQgV9cLNXwAC3QQAAlEpDTmUHImRSVIUeS8E")
+    #for num in assistants:
+            #client = await get_client(num)
+            #await client.send_sticker(
+                        #message.chat.id,
+                        #sticker="CAACAgEAAxkBAAEJ6nxkzFywBJ_zMhOj0wc7AQgV9cLNXwAC3QQAAlEpDTmUHImRSVIUeS8E"
+            #)
