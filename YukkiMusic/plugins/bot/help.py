@@ -58,13 +58,13 @@ async def helper_private(
                 #caption=_["help_1"],
                 reply_markup=keyboard
             )
-            if await is_on_off(config.LOG):
-                sender_id = update.from_user.id
-                sender_name = update.from_user.first_name
-                log_message = (
-                    f"{update.from_user.mention} has just started bot to check <code>HELP INFORMATION</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}"
-                )
-                await app.send_message(config.LOG_GROUP_ID, log_message)
+            #if await is_on_off(config.LOG):
+                #sender_id = update.from_user.id
+                #sender_name = update.from_user.first_name
+                #log_message = (
+                    #f"{update.from_user.mention} has just started bot to check <code>HELP INFORMATION</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}"
+                #)
+                #await app.send_message(config.LOG_GROUP_ID, log_message)
             
         else:
             await update.edit_message_text(
@@ -86,13 +86,13 @@ async def helper_private(
             #caption=_["help_1"], 
             reply_markup=keyboard
         )
-        if await is_on_off(config.LOG):
-            sender_id = update.from_user.id
-            sender_name = update.from_user.first_name
-            log_message = (
-                f"{update.from_user.mention} has just started bot to check <code>HELP MENU</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}"
-            )
-            await app.send_message(config.LOG_GROUP_ID, log_message)
+        #if await is_on_off(config.LOG):
+            #sender_id = update.from_user.id
+            #sender_name = update.from_user.first_name
+            #log_message = (
+                #f"{update.from_user.mention} has just started bot to check <code>HELP MENU</code>\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}"
+            #)
+            #await app.send_message(config.LOG_GROUP_ID, log_message)
         
 @app.on_message(
     filters.command(HELP_COMMAND)
