@@ -24,3 +24,5 @@ youtube-search
 youtube-search-python
 #git+https://github.com/yt-dlp/yt-dlp.gitnumpy
 yt-dlp
+urllib3>=1.26
+requests>=2.25
